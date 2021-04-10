@@ -1,0 +1,15 @@
+Set manual IP on PC to 192.168.1.11, gateway 192.168.1.1, subnet 255.255.255.0
+Hard reset openwrt
+Connect router via ethernet and navigate to 192.168.1.1
+Set admin pass
+Set static IP 192.168.0.2 AP  / 192.168.0.3 Client
+Save, reboot
+
+Set manual IP on PC to 192.168.0.4, gateway 192.168.0.1, subnet 255.255.255.0
+Connect to openwrt,
+Scan radio0, connect to home wifi as client, save apply
+Software, update lists, install: kmod-ath9k-htc /////// (kmod-ath, kmod-ath-common needed???)
+Delete home wifi client connection, save apply
+Generate and download backup file
+reboot
+
