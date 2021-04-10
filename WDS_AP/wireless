@@ -1,0 +1,23 @@
+
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option hwmode '11g'
+	option path 'pci0000:00/0000:00:00.0/0000:01:00.0/bcma0:1'
+	option channel 'auto'
+
+config wifi-device 'radio1'
+	option type 'mac80211'
+	option hwmode '11g'
+	option path 'platform/ehci-platform/usb1/1-1/1-1:1.0'
+	option htmode 'HT20'
+	option channel '6'
+
+config wifi-iface 'wifinet0'
+	option wds '1'
+	option ssid 'WLAN_WDSAP'
+	option encryption 'psk2'
+	option device 'radio1'
+	option mode 'ap'
+	option network 'lan'
+	option key 'xxxxxxxxxx'
+
