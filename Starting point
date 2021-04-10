@@ -8,7 +8,7 @@ Save, reboot
 Set manual IP on PC to 192.168.0.4, gateway 192.168.0.1, subnet 255.255.255.0
 Connect to openwrt,
 Scan radio0, connect to home wifi as client, save apply
-Software, update lists, install: kmod-ath9k-htc /////// (kmod-ath, kmod-ath-common needed???)
+Software, update lists, install: kmod-ath9k-htc
 Delete home wifi client connection, save apply
 Generate and download backup file
 reboot
